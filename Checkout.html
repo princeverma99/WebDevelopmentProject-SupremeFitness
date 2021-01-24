@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Checkout - Supreme Fitness</title>
+	<link rel="stylesheet" type="text/css" href="./css/style checkout.css">
+	<script type="text/javascript" src="./js/checkout.js"></script>
+</head>
+<body>		
+	<header>
+		<div class="logo">
+			<a href="main page.html"><img src="./media/logo.png" width="200px"></a>
+		</div>
+		<div class="links">
+			<ul>
+				<li><a href="main page.html">Welcome</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html" class="active">Checkout</a></li>
+				<li><a href="home.html">Logout</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<h1>Finalize Payment:</h1><h1 id="grand-total"></h1>
+
+	<div class="checkout-products">
+		<table style="color: white" id="table_products">
+			<tr>
+				<th>Product Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Tax</th>
+				<th>Total</th>
+			</tr>
+			<tr><td id="product-name-1"></td>
+				<td id="price-1"></td>
+				<td id="quantity-1"></td>
+				<td id="tax-1"></td>
+				<td id="total-1"></td>
+			</tr>
+			<tr>
+				<td id="product-name-2"></td>
+				<td id="price-2"></td>
+				<td id="quantity-2"></td>
+				<td id="tax-2"></td>
+				<td id="total-2"></td>
+			</tr>
+			<tr>
+				<td id="product-name-3"></td>
+				<td id="price-3"></td>
+				<td id="quantity-3"></td>
+				<td id="tax-3"></td>
+				<td id="total-3"></td>
+			</tr>
+			<tr>
+				<td id="product-name-4"></td>
+				<td id="price-4"></td>
+				<td id="quantity-4"></td>
+				<td id="tax-4"></td>
+				<td id="total-4"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="payment">
+		<div class="credit-card">
+			<form id="card_info">
+				<label for="card-number">*Card Number</label><br>
+				<input type="text" name="card_number" size="50px">
+				<p>Enter a 16 digit valid card number</p>
+				<label for="CVC">*CVC</label><br>
+				<input type="text" name="cvc" size="50px">
+				<p>Please enter 3 digit CVC</p>
+				<label for="name-on-card">*Name on Card</label><br>
+				<input type="text" name="name_on_card" size="50px">
+				<p>Please enter valid name</p>
+				<label for="expiration">*Expiration</label><br>
+				<input type="text" name="expire" placeholder="MM/YY" size="50px">
+				<p>Please enter valid Expire Date</p>
+				<input type="button" name="clear" value="Clear" onclick="tb_clear()">
+				<br>
+				<br>
+				<input type="checkbox" name="terms">
+				<label for="terms">*Agree to Terms and Conditions</label>
+			</form>
+		</div>
+
+		<div class="shipping-address">
+			<form id="shipping_info">
+				<label for="name">*Name</label><br>
+				<input type="text" name="name" size="50px">
+				<p>Name is Mandatory</p>
+				<label for="address">*Address</label><br>
+				<input type="text" name="address" size="50px">
+				<p>Address is Mandatory</p>
+				<label for="address-2">Address Line 2</label><br>
+				<input type="text" name="address_2" size="50px" class="not_mandatory"><br>
+				<label for="city">*City</label><br>
+				<input type="text" name="city" size="50px">
+				<p>City is Mandatory</p>
+				<label for="post-code">*Postal Code</label><br>
+				<input type="text" name="post_code" size="50px">
+				<p>Please enter valid address of 6 letters</p>
+				<label for="province">*Province/State</label><br>
+				<input type="text" name="province" size="50px">
+				<p>Province is Mandatory</p>
+				<label for="country">*Country</label><br>
+				<input type="text" name="country" size="50px">
+				<p>Country is Mandatory</p>
+			</form>
+		</div>
+	</div>
+
+	<div class="submit">
+		<form>
+			<input type="button" name="submit" value="Submit" onclick="validate_submit()">
+		</form>
+	</div>
+
+	<div class="social-links">
+		<ul>
+			<li><a href="https://myaccount.google.com/"><img src="./media/google-plus.png" width="50px"></a></li>
+			<li><a href="https://www.facebook.com/"><img src="./media/facebook-logo.png" width="50px"></a></li>
+			<li><a href="https://www.skype.com/en/"><img src="./media/skype-logo.png" width="50px"></a></li>
+			<li><a href="https://www.instagram.com/"><img src="./media/instagram-logo.png" width="50px"></a></li>
+		</ul>
+		<h3>Copyright &copy; Prince Verma</h3>
+	</div>
+</body>
+</html>

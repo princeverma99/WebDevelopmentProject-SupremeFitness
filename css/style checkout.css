@@ -1,0 +1,184 @@
+body
+{
+	margin: 0;
+	background-color: black;
+}
+header
+{
+	display: inline-block;
+	width: 100%;
+}
+header a
+{
+	text-decoration: none;
+	color: #b89b0a;
+}
+header a:hover
+{
+	color: #ffee9b;
+}
+header a.active
+{
+	color: #ffee9b;
+}
+.logo a
+{
+	float: left;
+}
+.logo
+{
+	padding: 0 0 0 20px;
+}
+header ul
+{
+	list-style-type: none;
+	float: right;
+	padding: 40px 70px 40px 0;
+}
+header li
+{
+	display: inline-block;
+	font-size: 18px;
+	padding: 0 20px;
+}
+header img
+{
+	padding: 10px;
+}
+.social-links ul
+{
+	list-style-type: none;
+	margin: auto;
+	text-align: center;
+}
+.social-links li
+{
+	margin: auto;
+	display: inline-table;
+	text-align: center;
+	padding: 20px 50px;
+}
+.social-links
+{
+	color: #ffee9b;
+	text-align: center;
+}
+h1
+{
+	color: #ffee9b;
+	text-align: center;
+}
+.payment
+{
+	color: white;
+	box-sizing: border-box;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.credit-card
+{
+	width: 50%;
+	margin: auto;
+	float: left;
+}
+.shipping-address
+{
+	width: 50%;
+	margin: auto;
+	float: right;
+}
+#product_name
+{
+	color: white;
+}
+table
+{
+	width: 60%;
+	text-align: center;
+	margin: 20px auto 50px auto;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 10px;
+}
+table th
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffee9b;
+	border: 1px solid #ffee9b;
+}
+table td
+{
+	font-size: 18px;
+}
+#grand-total
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+input[type="text"]
+{
+	width: 300px;
+	border-radius: 15px;
+	border: 2px solid #ffee9b;
+	padding: 5px;
+	text-align: center;
+	margin: 5px 0 10px 0;
+}
+.payment input[type="button"]
+{
+	border: 4px solid #ffee9b;
+	font-size: 14px;
+	width: 100px;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 10px 5px;
+}
+.payment input[type="button"]:hover
+{
+	background-color: #ffee9b;
+	color: black;
+	border: 4px solid black;
+}
+.payment
+{
+	overflow: hidden;
+	max-height: 800px;
+}
+.submit
+{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.submit input[type="button"]
+{
+	width: 300px;
+	font-size: 20px;
+	padding: 10px 0;
+	border-radius: 30px;
+	border: 4px solid #ffee9b;
+	cursor: pointer;
+}
+.submit input[type="button"]:hover
+{
+	background-color: green;
+	border: 4px solid #ffee9b;
+	color: #ffee9b
+}
+input + p 
+{
+	font-size: 14px;
+	text-align:center;
+	color: red;
+	visibility: hidden;
+	margin: 0;
+}
+input.invalid + p 
+{
+	visibility: visible;
+	height:auto;
+	margin-bottom: 15px;
+}

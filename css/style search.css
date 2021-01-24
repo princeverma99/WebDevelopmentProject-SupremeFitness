@@ -1,0 +1,99 @@
+body
+{
+	margin: 0;
+	background-color: black;
+}
+header
+{
+	display: inline-block;
+	width: 100%;
+}
+header a
+{
+	text-decoration: none;
+	color: #b89b0a;
+}
+header a:hover
+{
+	color: #ffee9b;
+}
+header a.active
+{
+	color: #ffee9b;
+}
+.logo a
+{
+	float: left;
+}
+.logo
+{
+	padding: 0 0 0 20px;
+}
+header ul
+{
+	list-style-type: none;
+	float: right;
+	padding: 40px 70px 40px 0;
+}
+header li
+{
+	display: inline-block;
+	font-size: 18px;
+	padding: 0 20px;
+}
+header img
+{
+	padding: 10px;
+}
+.social-links ul
+{
+	list-style-type: none;
+	margin: auto;
+	text-align: center;
+}
+.social-links li
+{
+	margin: auto;
+	display: inline-table;
+	text-align: center;
+	padding: 20px 50px;
+}
+.social-links
+{
+	color: #ffee9b;
+	text-align: center;
+}
+h1
+{
+	font-size: 40px;
+	color: #ffee9b;
+	text-align: center;
+}
+.products-list
+{
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	color: white;
+}
+.product
+{
+	box-sizing: border-box;
+	width: 25%;
+	display: inline-block;
+	margin: 0 30px;
+	padding-top: 40px;
+}
+form
+{
+	text-align: center;
+}
+form input[type="text"]
+{
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid #ffee9b;
+	font-size: 18px;
+}

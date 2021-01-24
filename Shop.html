@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Shop - Supreme Fitness</title>
+	<link rel="stylesheet" type="text/css" href="./css/style shop.css">
+	<script type="text/javascript" src="./js/shop.js"></script>
+</head>
+<body>		
+	<header>
+		<div class="logo">
+			<a href="main page.html"><img src="./media/logo.png" width="200px"></a>
+		</div>
+		<div class="links">
+			<ul>
+				<li><a href="main page.html">Welcome</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="shop.html" class="active">Shop</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<li><a href="home.html">Logout</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<h1>Add to Cart</h1>
+	<form>
+		<input type="text" name="search" placeholder="Final Price" size="50px">
+	</form>
+	<p>Please choose the items from following and specify Quantity (by default: 1):</p>
+
+	<div class="products-list">
+		<div class="product">
+			<img src="./media/product-1.jpeg" width="400px">
+			<h2>Excerscise Bikes</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="3000" onclick="total()">
+				<label for="price">$3000</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-2.jpg" width="400px">
+			<h2>Tredmills</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="5200" onclick="total()">
+				<label for="price">$5200</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-3.jpg" width="400px">
+			<h2>Elliptical</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="3400" onclick="total()">
+				<label for="price">$3400</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">				
+			</form>
+		</div>
+
+				<div class="product">
+			<img src="./media/product-4.jpg" width="400px">
+			<h2>Cycle</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="2000" onclick="total()"> 
+				<label for="price">$2000</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">				
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-5.jpg" width="400px">
+			<h2>Rowers</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="1000" onclick="total()">
+				<label for="price">$1000</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">				
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-6.jpg" width="400px">
+			<h2>Bench Press Bench</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="500" onclick="total()">
+				<label for="price">$500</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-7.jpg" width="400px">
+			<h2>Dumbells</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="100" onclick="total()">
+				<label for="price">$100</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-8.jpg" width="400px">
+			<h2>Weight Plates</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="250" onclick="total()">
+				<label for="price">$250</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+
+		<div class="product">
+			<img src="./media/product-9.jpg" width="400px">
+			<h2>Weight Bars</h2>
+			<form class="shop">
+				<input type="checkbox" name="product" value="500" onclick="total()">
+				<label for="price">$500</label>
+				<br><br>
+				<input type="text" name="quantity" placeholder="Quantity" class="qnty" onkeyup="total()">
+			</form>
+		</div>
+	</div>
+
+	<div class="prepare-invoice">
+		<form class="invoice" action="checkout.html">
+			<input type="submit" name="invoice" value="Go to Invoice" onclick="return passvalue()">
+		</form>
+	</div>
+
+
+	<div class="social-links">
+		<ul>
+			<li><a href="https://myaccount.google.com/"><img src="./media/google-plus.png" width="50px"></a></li>
+			<li><a href="https://www.facebook.com/"><img src="./media/facebook-logo.png" width="50px"></a></li>
+			<li><a href="https://www.skype.com/en/"><img src="./media/skype-logo.png" width="50px"></a></li>
+			<li><a href="https://www.instagram.com/"><img src="./media/instagram-logo.png" width="50px"></a></li>
+		</ul>
+		<h3>Copyright &copy; Prince Verma</h3>
+	</div>
+</body>
+</html>
